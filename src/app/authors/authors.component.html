@@ -1,0 +1,36 @@
+<section class="mt-5 text-center" id="authors">
+    <div class="container">
+        <h1 class="text-primary pb-3">
+            Meet The Authors
+        </h1>
+        <p class="lead mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum numquam aperiam dolores a porro!
+        </p>
+        <div class="row">
+            <div class="col-6 col-lg-3 my-3 " *ngFor="let author of authors">
+                <div class="card">
+                    <div class="card-body">
+                        <img [src]="author.img" class="img-fluid rounded-circle">
+                        <h3>{{author.name}}</h3>
+                        <h5 class="text-muted">{{author.title}}</h5>
+                        <p>{{author.about}}</p>
+                        <div class="social d-flex justify-content-around px-4">
+                            <a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                            <a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                            <a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

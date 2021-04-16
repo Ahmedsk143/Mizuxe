@@ -1,0 +1,16 @@
+section {
+  padding: 4rem 0 3rem 0;
+  background-color: #333;
+  text-align: center;
+  position: relative;
+
+  #subAlert {
+    width: 250px;
+    margin: 0 auto;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    z-index: 3;
+    opacity: 0.9;
+  }
+}

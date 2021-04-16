@@ -1,0 +1,17 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3 my-3  " *ngFor="let tip of tips" id="tip">
+                <div class="card  border-primary">
+                    <div class="card-body" [ngClass]="cardGetClass(tip)">
+                        <h3 [ngClass]="h3GetClass(tip)">Be {{tip}}
+                        </h3>
+                        <p [ngClass]="pGetClass(tip)">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet,
+                            deserunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

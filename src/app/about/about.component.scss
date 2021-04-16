@@ -1,0 +1,43 @@
+section {
+  scroll-margin-top: 92px;
+  .accordion-toggle[aria-expanded="true"]:before {
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+
+  .accordion-toggle[aria-expanded="false"]:before {
+    content: "\f106";
+    font: normal normal normal 14px/1 FontAwesome;
+  }
+  accordion-group {
+    ::ng-deep {
+      div {
+        & > div.panel-heading.card-header.panel-enabled {
+          background-color: #0876ebd0; // change the background of every accordion heading
+
+          .btn-link {
+            color: rgb(
+              246,
+              246,
+              246
+            ); // change the accordion heading buttons style
+            text-decoration: none;
+            font-size: 16px;
+          }
+          .btn-link:focus {
+            box-shadow: none;
+          }
+        }
+
+        & > div.panel-collapse.collapse.in.show > div {
+          background-color: hsla(
+            210,
+            10%,
+            83%,
+            0.1
+          ); // change the expanded content style
+        }
+      }
+    }
+  }
+}

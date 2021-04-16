@@ -1,0 +1,27 @@
+<section>
+    <div *ngFor="let alert of alerts" id="subAlert">
+        <alert type="success" [dismissOnTimeout]="alert.timeout" (onClosed)="onClosed(alert)">{{alert.msg}}
+        </alert>
+    </div>
+
+    <form>
+        <div class="container">
+            <form #subForm="ngForm" (ngSubmit)="subForm">
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control form-control-lg mb-2 mr-sm-2" placeholder="Name"
+                            name="name" ngModel #name>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control form-control-lg mb-2 mr-sm-2" placeholder="Email"
+                            name="email" ngModel #email>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-block btn-lg" (click)="subscribed(subForm)"
+                            role="button">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </form>
+</section>

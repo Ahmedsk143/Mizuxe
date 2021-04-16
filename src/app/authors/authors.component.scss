@@ -1,0 +1,27 @@
+section {
+  scroll-margin-top: 92px;
+  .card {
+    text-align: center;
+    img {
+      margin-top: -50px;
+      margin-bottom: 2rem;
+      width: 40%;
+    }
+    &:hover {
+      background: #3292a6;
+      color: #fff;
+      transition: all 0.3s ease-out;
+      h5.text-muted {
+        color: #fff !important;
+        transition: all 0.3s ease-out;
+      }
+      a {
+        color: #fff;
+        transition: all 0.3s ease-out;
+      }
+    }
+    a {
+      font-size: 1.3rem;
+    }
+  }
+}

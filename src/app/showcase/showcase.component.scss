@@ -1,0 +1,32 @@
+header {
+  background-image: linear-gradient(
+      rgba(4, 131, 204, 0.445),
+      rgba(4, 120, 187, 0.445)
+    ),
+    url("../../assets/img/mountains.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  scroll-margin-top: 92px;
+  img {
+    height: 22%;
+    width: auto;
+  }
+  height: calc(100vh - 76px);
+  @media (max-width: 991px) {
+    height: 144vh;
+    .col {
+      text-align: center;
+    }
+  }
+  @media (max-width: 576px) {
+    height: 100vh;
+    h1 {
+      font-size: 3rem;
+    }
+    img {
+      height: 12%;
+      width: auto;
+    }
+  }
+}
